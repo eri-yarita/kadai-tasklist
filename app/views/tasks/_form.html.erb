@@ -9,11 +9,13 @@
     </div>
   <% end %>
   
-  <%= f.label :status, 'ステータス' %>
-  <%= f.text_field :status %>
+  <div class="form-group">
+    <p><%= f.label :status, 'ステータス' %></p>
+    <p><%= f.text_field :status %></p>
   
-  <%= f.label :content, 'タスク' %>
-  <%= f.text_field :content %>
+    <p><%= f.label :content, 'タスク' %></p>
+    <p><%= f.text_field :content %></p>
 
-  <%= f.submit '作成' %>
+    <%= f.submit '作成', class: 'btn btn-primary btn-block' %>
+  </div>
 <% end %>
